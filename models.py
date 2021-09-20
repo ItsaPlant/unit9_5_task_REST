@@ -27,10 +27,10 @@ class Posts:
     def update(self, id, data):
         post = self.get(id)
         if post:
-            # index = self.posts.index(id)
-            # self.posts[index] = data
-            self.posts[id-1] = data
-            self.save_all()
+            index = self.posts.index(post) # ta linijka wyrzuca błąd 'out of range'
+            self.posts[index] = data
+            # self.posts[id-1] = data
+            # self.save_all()
             return True
         return False
 posts = Posts()
