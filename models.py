@@ -1,6 +1,6 @@
 import json
 from os import waitpid
-from wtforms.compat import with_metaclass
+#from wtforms.compat import with_metaclass
 
 class Posts:
     def __init__(self):
@@ -14,7 +14,7 @@ class Posts:
         return self.posts
     
     def get(self, id):
-        return self.posts[id]
+        return self.posts[id-1]
 
     def create(self, data):
         self.posts.append(data)
@@ -27,8 +27,9 @@ class Posts:
     def update(self, id, data):
         post = self.get(id)
         if post:
-            index = self.posts.index(id)
-            self.posts[index] = data
+            # index = self.posts.index(id)
+            # self.posts[index] = data
+            self.posts[id-1] = data
             self.save_all()
             return True
         return False

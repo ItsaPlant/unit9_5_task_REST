@@ -1,1 +1,1 @@
-[{"id": 1, "title": "Lekcja angielskiego", "description": "Czasowniki regularne", "done": false}, {"id": 2, "title": "Python", "description": "Dekoratory", "done": false}, {"id": 3, "title": "Po\u0107wicz", "description": "", "done": false}]
+[{"title": "Lekcja angielskiego", "description": "Czasowniki nieregularne", "done": true}, {"id": 2, "title": "Python", "description": "Dekoratory", "done": false}, {"id": 3, "title": "Po\u0107wicz", "description": "", "done": false}]
